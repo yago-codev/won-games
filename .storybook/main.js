@@ -5,6 +5,7 @@ module.exports = {
   core: {
     builder: 'webpack5'
   },
+  // modificando o absolute path para resolver os modulos a partir da pasta src
   webpackFinal: (config) => {
     config.resolve.modules.push(`${process.cwd()}/src`)
     return config
